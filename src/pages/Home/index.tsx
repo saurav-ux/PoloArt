@@ -6,22 +6,25 @@ import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
 
+// import { Carousel } from 'antd';
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
-
+const Carousell = lazy(() => import('../../components/Carousel/Carousell'))
+const Caregories = lazy(()=>import('../../components/Categories/Categories'))
 const Home = () => {
   return (
     <Container>
       <ScrollToTop />
+      <Carousell/>
       <ContentBlock
         direction="right"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="poloart1.png"
         id="intro"
       />
       <MiddleBlock
@@ -34,23 +37,24 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="poloart2.png"
         id="about"
       />
       <ContentBlock
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="poloart3.png"
         id="mission"
       />
       <ContentBlock
         direction="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="poloart4.png"
         id="product"
       />
+      <Caregories/>
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}

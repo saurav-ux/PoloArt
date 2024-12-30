@@ -1,0 +1,46 @@
+.tab-slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+.scroll-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.scroll-btn:hover {
+    background-color: #0056b3;
+}
+
+.tabs-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+}
+
+.tabs-wrapper::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+.tabs-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
