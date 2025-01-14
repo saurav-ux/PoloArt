@@ -62,7 +62,9 @@ const Header = ({ t }: { t: TFunction }) => {
             <SvgIcon src="image.png" width="101px" height="64px" />
           </LogoContainer>
           <NotHidden>
-            <MenuItem />
+            <div style={{justifyContent:'flex-end',alignContent:'flex-end'}}>
+              <MenuItem />
+              </div>
           </NotHidden>
           <Burger onClick={toggleButton}>
             <Outline />

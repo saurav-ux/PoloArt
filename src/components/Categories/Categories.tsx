@@ -38,11 +38,16 @@ export default function ScrollableTabsButtonVisible() {
   };
 
   return (
+    <>
+      <div>
+        <div style={{textAlign:'center', fontSize:'2.5em',fontWeight:'bold',color:'black'}}>Our Products</div>
+      </div>
     <Box
       sx={{
         flexGrow: 1,
         maxWidth: { xs: 320, sm: 1100 },
         bgcolor: "background.paper",
+        
       }}
     >
       <Tabs
@@ -53,22 +58,23 @@ export default function ScrollableTabsButtonVisible() {
         aria-label="visible arrows tabs example"
         sx={{
           [`& .${tabsClasses.scrollButtons}`]: {
-            "&.Mui-disabled": { opacity: 0.3 },
+            "&.Mui-disabled": { opacity: 0.3 },color:'black'
           },
-        }}
+          }}
+         
       >
-        <Tab label="Alive" />
-        <Tab label="Polo" />
-        <Tab label="Fusion" />
-        <Tab label="Carbon" />
-        <Tab label="Lino" />
-        <Tab label="Apollo" />
-        <Tab label="Divertor & Spout" />
-        <Tab label="Square Bath set" />
-        <Tab label="Round Bath Set" />
-        <Tab label="Shower" />
-        <Tab label="Health Faucets" />
-        <Tab label="Accessories" />
+        <Tab label="Alive" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Polo" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Fusion" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Carbon" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Lino" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Apollo" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Divertor & Spout" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Square Bath set" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Round Bath Set" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Shower" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Health Faucets" style={{color:'black',fontWeight:'bold'}}/>
+        <Tab label="Accessories" style={{color:'black',fontWeight:'bold'}}/>
       </Tabs>
       <TabPanel value={value} index={0}>
         <Details />
@@ -109,6 +115,7 @@ export default function ScrollableTabsButtonVisible() {
       <TabPanel value={value} index={12}>
         Content for Item Six
       </TabPanel>
-    </Box>
+      </Box>
+      </>
   );
 }

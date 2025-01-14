@@ -3,7 +3,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import Alive1 from './alive1.png'
+import Alive1 from './image.png'
+import { borderRadius } from '@mui/system';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -11,9 +12,10 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
+  // border: '2px solid #fff',
   boxShadow: 24,
   p: 4,
+  borderRadius:2
 };
 
 export default function ImgModal({open,setOpen}:any) {
@@ -31,9 +33,10 @@ export default function ImgModal({open,setOpen}:any) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2" style={{textAlign:'center'}}>
-            <img src={ Alive1} />
+          <Typography id="modal-modal-title" variant="h6" component="h2" style={{textAlign:'center',width:'20'}} >
+            <img src={ Alive1} style={{height:"200px"}}/>
           </Typography>
+          <hr></hr>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>

@@ -71,13 +71,14 @@ export const Large = styled(Link)`
 export const Chat = styled("p")`
   color: #18216d;
   max-width: fit-content;
-  border-bottom: 1px solid #18216d;
+  // border-bottom: 1px solid #18216d;
   cursor: pointer;
   margin-top: 1rem;
   transition: all 0.3s ease-in-out;
-
+  font-size: 15px;
+   text-decoration: none;
   &:hover {
-    border-bottom: 1px solid rgb(255, 130, 92);
+    // border-bottom: 1px solid rgb(255, 130, 92);
     color: rgb(255, 130, 92);
   }
 `;

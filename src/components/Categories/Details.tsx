@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
-import Alive1 from "./alive1.png";
+import Alive1 from "./image.png";
 import ImgModal from "./ImgModal";
 
 const Item = styled(Paper)(({ theme }) => ({

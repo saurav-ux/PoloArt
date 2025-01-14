@@ -7,7 +7,7 @@ import './Carousell.css';
 
 function UncontrolledExample() {
   return (
-    <Carousel>
+    <Carousel style={{marginTop:'6em'}}>
       <Carousel.Item>
               {/* <ExampleCarouselImage text="First slide" /> */}
               <img src={Img1 } style={{width:'100%' , height:'auto'}} alt='img1'/>

@@ -54,22 +54,24 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                {t(`Do you have any questions? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
+              <a href="tel:+919876543210">
+                <Chat>{t(`Call Us: +91-98765-43210`)}</Chat>
+                <Chat>{t(`Call Us: +91-98765-43210`)}</Chat>
               </a>
             </Col>
+
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/">{t("Application Security")}</Large>
               <Large to="/">{t("Software Principles")}</Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
               <Large to="/">{t("Support Center")}</Large>
               <Large to="/">{t("Customer Support")}</Large>
-            </Col>
+            </Col> */}
           </Row>
           <Row justify="space-between">
             <Col lg={10} md={10} sm={12} xs={12}>
@@ -86,7 +88,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large to="/">{t("Press")}</Large>
               <Large to="/">{t("Careers & Culture")}</Large>
             </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -106,7 +108,7 @@ const Footer = ({ t }: { t: TFunction }) => {
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
@@ -128,22 +130,20 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-              <SocialLink
+              {/* <SocialLink
                 href="#"
                 src="github.svg"
-              />
-              <SocialLink
-                href="#"
-                src="twitter.svg"
-              />
-              <SocialLink
+              /> */}
+              <SocialLink href="#" src="call.svg" />
+              <SocialLink href="#" src="twitter.svg" />
+              {/* <SocialLink
                 href="#"
                 src="linkedin.svg"
-              />
-              <SocialLink
+              /> */}
+              {/* <SocialLink
                 href="#"
                 src="medium.svg"
-              />
+              /> */}
               {/* <a
                 href="https://ko-fi.com/Y8Y7H8BNJ"
                 target="_blank"
